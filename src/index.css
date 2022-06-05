@@ -274,3 +274,7 @@ label {
 .text-left {
   text-align: left;
 }
+
+.padding {
+  padding: 0 16px;
+}
