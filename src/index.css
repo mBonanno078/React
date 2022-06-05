@@ -278,3 +278,66 @@ label {
 .padding {
   padding: 0 16px;
 }
+
+.App{
+  background-color: var( --clr-grey-9);
+  text-align: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.App .title {
+  margin-bottom: 40px;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+.button-delete-item {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: ease-in-out 0.2s;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.button-delete-item:hover,
+.button-delete-item:active,
+.button-delete-item:focus {
+    color: hsl(360, 67%, 44%);
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 556px;
+    margin: 60px 0 auto; 
+}
+
+.button-delete-item.reset {
+  color: hsl(360, 67%, 44%);
+  border-radius: 8px;
+}
+
+.button-delete-item.reset:active,
+.button-delete-item.reset:focus,
+.button-delete-item.reset:hover {
+  background-color: hsl(360, 67%, 44%);
+  color: #fff;
+}
+
+.button-delete-item.reload {
+  color: var( --clr-primary-3);
+  border-radius: 8px;
+}
+
+.button-delete-item.reload:active,
+.button-delete-item.reload:focus,
+.button-delete-item.reload:hover {
+  background-color: var(--clr-primary-3);
+  color: #fff;
+}
+
