@@ -11,24 +11,22 @@ const People = () => {
         let newPeople = people.filter(el => el.id !== id);
         setPeople(newPeople);
     }
- 
+
     return (
         <>
             {people.map( el => {
-               const {id , name} = el;
-               return (
-                   <div key={id} className="item shadow">
-                       <h5>{name}</h5>
-                       <button 
+                const {id , name} = el;
+                return (
+                    <div key={id} className="item shadow">
+                        <h5>{name}</h5>
+                        <button 
                         type='button'
                         className='button delete-button' 
                         onClick={ () => removePeople(id)}>
-                           X
-                       </button>
-                   </div>
-
-               );
-
+                            X
+                        </button>
+                    </div>
+                );
             })}
         </>
     );
